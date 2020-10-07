@@ -192,12 +192,12 @@ namespace CommandTerminal
 
         void OnGUI()
         {
-            if (Event.current.Equals(Event.KeyboardEvent(ToggleHotkey)) || Input.GetButton("Terminal"))
+            if (Input.inputString.Equals(ToggleHotkey) || Input.GetButton("Terminal"))
             {
                 SetState(TerminalState.OpenSmall);
                 initial_open = true;
             }
-            else if (Event.current.Equals(Event.KeyboardEvent(ToggleFullHotkey)))
+            else if (Input.inputString.Equals(ToggleFullHotkey))
             {
                 SetState(TerminalState.OpenFull);
                 initial_open = true;
@@ -295,11 +295,11 @@ namespace CommandTerminal
             {
                 command_text = History.Next();
             }
-            else if (Event.current.Equals(Event.KeyboardEvent(ToggleHotkey)))
+            else if (Input.inputString.Equals(ToggleHotkey))
             {
                 ToggleState(TerminalState.OpenSmall);
             }
-            else if (Event.current.Equals(Event.KeyboardEvent(ToggleFullHotkey)))
+            else if (Input.inputString.Equals(ToggleFullHotkey))
             {
                 ToggleState(TerminalState.OpenFull);
             }

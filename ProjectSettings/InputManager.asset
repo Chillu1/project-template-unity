@@ -298,7 +298,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: t
+    positiveButton: '|'
     altNegativeButton: 
     altPositiveButton: joystick button 1
     gravity: 1000

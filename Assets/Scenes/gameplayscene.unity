@@ -467,6 +467,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1720428040434723650, guid: 035f63c01ada70dc19fdfa58ac692bca,
+        type: 3}
+      propertyPath: ToggleHotkey
+      value: '|'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720428040434723650, guid: 035f63c01ada70dc19fdfa58ac692bca,
+        type: 3}
+      propertyPath: ToggleFullHotkey
+      value: t
+      objectReference: {fileID: 0}
     - target: {fileID: 1720428040434723676, guid: 035f63c01ada70dc19fdfa58ac692bca,
         type: 3}
       propertyPath: m_LocalPosition.x

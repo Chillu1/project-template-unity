@@ -47,8 +47,8 @@ MonoBehaviour:
   MaxHeight: 0.7
   SmallTerminalRatio: 0.33
   ToggleSpeed: 360
-  ToggleHotkey: '`'
-  ToggleFullHotkey: '#`'
+  ToggleHotkey: '|'
+  ToggleFullHotkey: t
   BufferSize: 512
   ConsoleFont: {fileID: 0}
   InputCaret: '>'

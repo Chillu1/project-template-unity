@@ -22,7 +22,7 @@ namespace CustomGameNamespace
             }
         }
 
-        [RegisterCommand(Name = "gamespeed", MinArgCount = 1, MaxArgCount = 1, Help = "Set time to X seconds")]
+        [RegisterCommand(Name = "gamespeed", MinArgCount = 1, MaxArgCount = 1, Help = "Set gamespeed (dev/testing)")]
         private static void CommandSetGameSpeed(CommandArg[] args)
         {
             if (Terminal.IssuedError)
@@ -31,7 +31,7 @@ namespace CustomGameNamespace
             GameController.GameSpeed = args[0].Float;
         }
 
-        [RegisterCommand(Name = "timespeed", MinArgCount = 1, MaxArgCount = 1, Help = "Set time to X seconds")]
+        [RegisterCommand(Name = "timespeed", MinArgCount = 1, MaxArgCount = 1, Help = "Set timespeed (balance factor for non-Unity mechanics")]
         private static void CommandSetTimeSpeed(CommandArg[] args)
         {
             if (Terminal.IssuedError)
@@ -58,7 +58,7 @@ namespace CustomGameNamespace
             GameController.TimeController.PauseOrResume();
         }
 
-        [RegisterCommand(Name = "scene", MinArgCount = 1, MaxArgCount = 1, Help = "Pause/Unpause the game")]
+        [RegisterCommand(Name = "scene", MinArgCount = 1, MaxArgCount = 1, Help = "Load scene")]
         private static void CommandSwitchScene(CommandArg[] args)
         {
             if (Terminal.IssuedError)
@@ -159,7 +159,7 @@ namespace CustomGameNamespace
         }
 
         //[RegisterCommand(name="restart")]
-        private static void CommandRestartGame(CommandArg[] args)//Couldn't find a easy, multi-platform way of restarting the whole applcation with Unity
+        private static void CommandRestartGame(CommandArg[] args)//Couldn't find an easy, multi-platform way of restarting the whole applcation with Unity
         {
             throw new NotImplementedException();
         }
@@ -190,7 +190,7 @@ namespace CustomGameNamespace
 
         //Possible command ideas for your project (they might get implemented at some point here):
         //Set input/graphics/misc settings
-        //Play out a "predefined" dev scenario (instead of using the scene system)
+        //Play out a "predefined coded" dev scenario (instead of using the scene system)
 
 
         #endregion
